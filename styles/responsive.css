@@ -41,24 +41,54 @@
 }
 
 /* horario responsive */
-
-.materiamobile{
-	width: 200px;
-	height: 16px;
-	color: black;
-	text-align: center;
-	font-size: 90%;
-}
-
-@media(max-width: 700px){
-	.desktop{
-		display: none;
-	}
-	.mobile{
-		display: flex;
-	}
-	.title{
-	padding-top: 1px;
-    font-size: 250%;
-	}
+@media(max-width: 1100px){
+    .container{
+        grid-template-columns:.3fr 1fr .3fr;
+        grid-template-rows: .2fr 1fr 3fr 3fr 3fr 3fr 3fr .1fr;
+        grid-template-areas: 
+            "h2 h2 h2"
+            "menu menu menu"
+            "title title title"
+            "space1 seg space2"
+            "space1 ter space2"
+            "space1 qua space2"
+            "space1 qui space2"
+            "space1 sex space2"
+            "footer footer footer"
+        ;
+    } 
+    .title{
+        font-size: 16vw;
+        margin-bottom: 5vh;
+    }
+    .table ~ .table{
+        margin-left: 0;
+    }
+    .table h3{
+        font-size: 7vw;
+        margin: 7vh 0 3vh 0;
+    }
+    .table p{
+        font-size: 5vw;
+        line-height: 6vw;
+        font-weight: 600;
+        padding-bottom: 1vh;
+    }
+    .table{
+        min-height: 300px;
+        height: 80vh;
+        margin-top: 100px;
+        margin: 0 0 2vh 0;
+    }
+    footer{
+        margin-top: 2vh;
+        font-size: 1.8vh;
+        margin-bottom: 2vh;
+    }
+    @media(min-width: 700px){
+        .table{
+            height: 60vh;
+            max-height: 2000px;
+        }
+    }
 }
