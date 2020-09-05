@@ -21,7 +21,7 @@
 .desktopth{
 	width: 200px;
 	height: 32px;
-	color: black;
+	color: var(--light);
 	font-weight: bold;
     font-size: 200%;
     margin-left: 1000px;
@@ -29,12 +29,12 @@
 .materiadesk{
 	width: 200px;
 	height: 32px;
-	color: black;
+	color: var(--light);
 	text-align: center;
 	font-size: 100%
 }
 .desktop{
-	position: absolute;
+    position: absolute;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
@@ -51,13 +51,16 @@
 .mobileth{
 	width: 200px;
 	height: 28px;
-	color: black;
+	color: var(--light);
 	font-weight: bold;
 	font-size: 110%;
 	padding-top: 10px;
 }
 
-td {
+.dia {
     background: var(--dark);
-    padding: 10px;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
