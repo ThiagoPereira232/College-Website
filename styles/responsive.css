@@ -39,3 +39,26 @@
         background-image: none;
     }
 }
+
+/* horario responsive */
+
+.materiamobile{
+	width: 200px;
+	height: 16px;
+	color: black;
+	text-align: center;
+	font-size: 90%;
+}
+
+@media(max-width: 700px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: flex;
+	}
+	.title{
+	padding-top: 1px;
+    font-size: 250%;
+	}
+}

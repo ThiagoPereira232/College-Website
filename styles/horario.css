@@ -1,0 +1,45 @@
+.title{
+	text-align: center;
+	color: var(--primary);
+	font-weight: bold;
+	padding-top: 70px;
+	font-size: 65px;
+}
+.desktopth{
+	width: 200px;
+	height: 32px;
+	color: black;
+	font-weight: bold;
+    font-size: 200%;
+    margin-left: 1000px;
+}
+.materiadesk{
+	width: 200px;
+	height: 32px;
+	color: black;
+	text-align: center;
+	font-size: 100%
+}
+.desktop{
+	position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+.mobile{
+	display: none;
+	position: absolute;
+    top: 554px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.mobileth{
+	width: 200px;
+	height: 28px;
+	color: black;
+	font-weight: bold;
+	font-size: 110%;
+	padding-top: 10px;
+}
