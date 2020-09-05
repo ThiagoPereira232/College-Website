@@ -38,7 +38,7 @@ body{
 .table{
     background: var(--dark);
     max-height: 50vh;
-    border-radius: 2vh;
+    border-radius: 5vh;
     color: white;
     text-align: center;
 }
