@@ -9,56 +9,28 @@
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .2fr 2fr .1fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: .2fr 3fr .2fr;
     grid-template-areas: 
-        "header header header"
-        "space1 content space2"
+        "nav nav sidebar"
+        "space main content6"
         "footer footer footer"
     ;
+    grid-gap: .2rem;
 }
-header{
+h2{
     background: #5fbfff;
-    grid-area: header;
+    grid-area: nav;
 }
-.content{
+main{
     background: #3eb2ff;
-    grid-area: content;
+    grid-area: main;
+}
+#menu{
+    background: #0098fd;
+    grid-area: sidebar;
 }
 footer{
     background: #2d5b7a;
     grid-area: footer;
-}
-
-/* menu */
-.menu{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: white;
-}
-.hamburguer{
-    display: block;
-    background: black;
-    width: 40px;
-    height: 3.5px;
-    position: relative;
-}
-.hamburguer::before,
-.hamburguer::after{
-    content: "";
-    display: block;
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-}
-.hamburguer::before{
-    top: -10px;
-}
-.hamburguer::after{
-    bottom: -10px;
 }
