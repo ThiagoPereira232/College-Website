@@ -20,26 +20,3 @@
 	text-align: center;
 	font-size: 100%
 }
-.desktop{
-	position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-}
-
-.mobile{
-	display: none;
-	position: absolute;
-    top: 554px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-.mobileth{
-	width: 200px;
-	height: 28px;
-	color: black;
-	font-weight: bold;
-	font-size: 110%;
-	padding-top: 10px;
-}
