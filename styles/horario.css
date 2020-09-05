@@ -1,82 +1,59 @@
+body{
+    height: 100vh;
+}
+/* grid */
 .container{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: .2fr 3fr .1fr;
+    grid-template-columns:.5fr 1fr 1fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: .2fr 1fr 3fr .1fr;
     grid-template-areas: 
-        "h2 h2 h1 h1 menu menu menu"
-        "none segunda terca quarta quinta sexta none"
+        "h2 h2 h2 space1 menu menu menu"
+        "title title title title title title title"
+        "space seg ter qua qui sex content6"
         "footer footer footer footer footer footer footer"
     ;
-}
-
+} 
 .title{
-    position: relative;
-    grid-area: h1;
+    grid-area: title;
+    margin-top: 7vh;
+    font-size: 10vh;
+    color: var(--primary);
     text-align: center;
-    transform: translate(50%);
-	color: var(--primary);
-	font-weight: bold;
-	padding-top: 70px;
-	font-size: 65px;
 }
-.desktopth{
-	width: 200px;
-	height: 32px;
-	color: var(--light);
-	font-weight: bold;
-    font-size: 200%;
-    margin-left: 1000px;
+#seg{
+    grid-area: seg;
 }
-.materiadesk{
-	width: 200px;
-	height: 32px;
-	color: var(--light);
-	text-align: center;
-	font-size: 100%
+#ter{
+    grid-area: ter;
 }
-.desktop{
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+#qua{
+    grid-area: qua;
 }
-
-.mobile{
-	display: none;
-	position: absolute;
-    top: 554px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+#qui{
+    grid-area: qui;
 }
-.mobileth{
-	width: 200px;
-	height: 28px;
-	color: var(--light);
-	font-weight: bold;
-	font-size: 110%;
-	padding-top: 10px;
+#sex{
+    grid-area: sex;
 }
-
-.dia {
+/* tabelas */
+.table{
     background: var(--dark);
-    width: 200px;
-    height: 300px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    max-height: 50vh;
+    border-radius: 2vh;
+    color: white;
+    text-align: center;
 }
-
-#segunda {
-    grid-area: segunda;   
+.table ~ .table{
+    margin-left: 10px;
 }
-#terca {
-    grid-area: terca;   
+.table h3{
+    font-size: 4vh;
+    margin: 10vh 0 2vh 0;
 }
-#quarta {
-    grid-area: quarta;   
+.table p{
+    font-size: 2.5vh;
+    line-height: 3.5vh;
+    font-weight: 600;
 }
-#quinta {
-    grid-area: quinta;   
-}
-#sexta {
-    grid-area: sexta;   
+p span{
+    color: var(--primary);
 }
