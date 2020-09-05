@@ -1,5 +1,18 @@
+.container{
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: .2fr 3fr .1fr;
+    grid-template-areas: 
+        "h2 h1 menu"
+        "tabel table table"
+        "footer footer footer"
+    ;
+}
+
 .title{
-	text-align: center;
+    position: relative;
+    grid-area: h1;
+    text-align: center;
+    transform: translate(50%);
 	color: var(--primary);
 	font-weight: bold;
 	padding-top: 70px;
@@ -42,4 +55,9 @@
 	font-weight: bold;
 	font-size: 110%;
 	padding-top: 10px;
+}
+
+td {
+    background: var(--dark);
+    padding: 10px;
 }
