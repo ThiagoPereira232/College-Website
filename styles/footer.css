@@ -1,0 +1,9 @@
+footer{
+    grid-area: footer;
+    font-size: 1.5vh;
+    color: #2f2e4180;
+}
+footer a{
+    font-weight: 600;
+    color: #2f2e4180;
+}

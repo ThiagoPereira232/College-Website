@@ -1,0 +1,25 @@
+h2{
+    grid-area: h2;
+    padding: 1vh 0 0 calc(5vw - 5px);
+    font-size: 2vw;
+    color: var(--primary);
+}
+#menu{
+    grid-area: menu;
+    padding: 2vh 5vw 0 0;
+    font-weight: 600;
+}
+#menu a ~ a{
+    margin-left: 1vw;
+}
+#menu a{
+    color: var(--dark);
+    font-size: 1vw;
+}
+#menu a.active{
+    color: var(--primary);
+    font-weight: 700;
+}
+#menu a:hover{
+    color: var(--light);
+}

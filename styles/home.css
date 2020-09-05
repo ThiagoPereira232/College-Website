@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+    background: url("../images/background.svg") no-repeat;
+    background-position: 10vw bottom;
+    background-size: 90vw;
+}
+/* grid */
+.container{
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: .2fr 3fr .1fr;
+    grid-template-areas: 
+        "h2 h2 menu"
+        "space main content6"
+        "footer footer footer"
+    ;
+}
+main{
+    grid-area: main;
+}
+h1{
+    margin-top: 20vh;
+    font-size: 15vh;
+    color: var(--primary);
+}
+p{
+    margin-top: -2vh;
+    font-size: 3vh;
+    color: var(--light);
+}
+button{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 4vh;
+    margin-top: 4vh;
+    font-size: 2vh;
+    font-weight: 700;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #5c55e2;
+}
+button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    background-color: #4e48c0;
+}
